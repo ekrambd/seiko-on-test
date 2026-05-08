@@ -9,6 +9,6 @@ $conn = mysql_connect($host, $user, $pass);
 if (!$conn) {
     die("DB connection failed: " . mysql_error());
 }
-
+echo "connected";
 mysql_select_db($db, $conn);
 ?>
